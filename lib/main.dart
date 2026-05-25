@@ -28,15 +28,26 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          // Load a Lottie file from your assets
-          Lottie.asset('assets/loading.json',
-            animate: true,
+      body: Padding(
+        padding: const EdgeInsets.only(top :200.0),
+        child: Center(
+
+          child: ListView(
+            children: [
+              // Load a Lottie file from your assets
+              Lottie.asset('assets/loading.json',
+                animate: true,
+                alignment: Alignment.center,
+                height: 300,
+                width: 300,
+                fit: BoxFit.contain
+
+              ),
+
+
+            ],
           ),
-
-
-        ],
+        ),
       ),
 
     );
