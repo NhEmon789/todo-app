@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
+import 'pages/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,38 +18,8 @@ class MyApp extends StatelessWidget {
         colorScheme: .fromSeed(seedColor: Colors.white),
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(),
+      home: const SplashScreen(),
     );
   }
 }
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top :200.0),
-        child: Center(
-
-          child: ListView(
-            children: [
-              // Load a Lottie file from your assets
-              Lottie.asset('assets/loading.json',
-                animate: true,
-                alignment: Alignment.center,
-                height: 300,
-                width: 300,
-                fit: BoxFit.contain
-
-              ),
-
-
-            ],
-          ),
-        ),
-      ),
-
-    );
-  }
-}
