@@ -43,6 +43,13 @@ class _HomePageState extends State<HomePage> {
           style: TextStyle(fontSize: 22),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+          foregroundColor: Colors.black,
+          backgroundColor: Colors.blue,
+          tooltip: "Add Task",
+          child: Icon(Icons.add_task),
+          onPressed: (){}
+      ),
     );
   }
 }
